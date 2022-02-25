@@ -6,6 +6,8 @@ window.addEventListener('load', () => {
     form.addEventListener('submit', (e) => {
         e.preventDefault();
 
+
+
         const task = input.value;
         console.log(task);
 
@@ -17,11 +19,13 @@ window.addEventListener('load', () => {
             return;
         }
 
+
         const task_el = document.createElement("div");
         task_el.classList.add("task");
 
         const task_content_el = document.createElement("div");
         task_content_el.classList.add("content");
+
 
         task_el.appendChild(task_content_el);
 
@@ -44,8 +48,15 @@ window.addEventListener('load', () => {
         task_delete_el.classList.add("delete");
         task_delete_el.innerHTML = "Delete";
 
+        const task_Done_el = document.createElement("button");
+        task_Done_el.classList.add("Done");
+        task_Done_el.innerHTML = "Done"
+
+
         task_actions_el.appendChild(task_edit_el);
         task_actions_el.appendChild(task_delete_el);
+        task_actions_el.appendChild(task_Done_el);
+
 
         task_el.appendChild(task_actions_el);
 
@@ -66,7 +77,23 @@ window.addEventListener('load', () => {
         task_delete_el.addEventListener('click', () => {
             list_el.removeChild(task_el)
         })
+        task_Done_el.addEventListener('click', () => {
+            task_input_el.style.textDecoration = " 2px black line-through";
+            task_delete_el.style.visibility = "hidden";
+            task_edit_el.style.visibility = "hidden"
+        })
+        button.addEventListener('click', () => {
+            Dan_el.removeChild(list_el)
+
+        })
+
+
+
+
+
+
 
     })
+
 
 })

@@ -73,6 +73,22 @@ button {
     transition: 0.4s;
 }
 
+#new-task-delete {
+    color: red;
+    font-size: 1.25rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+#new-task-delete:hover {
+    opacity: 0.8;
+}
+
+#new-task-delete:active {
+    opacity: 0.6;
+}
+
 #new-task-submit:hover {
     opacity: 0.8;
 }
@@ -154,4 +170,8 @@ main {
 
 .task .actions .delete {
     color: crimson;
+}
+
+.task .actions .Done {
+    color: green;
 }

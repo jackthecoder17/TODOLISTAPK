@@ -13,31 +13,40 @@
 <body>
 
     <header>
-        <h1> Task list 2021</h1>
+        <h1> Task list 2022</h1>
         <form id="new-task-form">
             <input type="text" id="new-task-input" placeholder="Tell me your plans">
             <input type="submit" id="new-task-submit" value="Add task">
+            <input type="button" id="new-task-delete" value="Delete all">
         </form>
     </header>
     <main>
         <section class="task-list">
             <h2>Tasks</h2>
-            <div id="tasks">
+            <div id="container">
+                <div id="tasks">
 
-                <!--<div class="task">
-                    <div class="content">
-                        <input type="text" class="text" value="My Shiny Task" readonly/>
+                    <!--<div class="task">
+                        <div class="content">
+                            <input type="text" class="text" value="My Shiny Task" readonly/>
+                        </div>
+                        <div class="actions">
+                            <button class="edit">Edit</button>
+                            <button class="delete">Delete</button>
+                            <button class="Done"> Done</button>
+                        
+                        </div>
                     </div>
-                    <div class="actions">
-                        <button class="edit">Edit</button>
-                        <button class="delete">Delete</button>
+                    <div class="sigh">
+                        <button class="ext">Delete all</button>
                     </div>
+    
+    
+    
+    
                 </div>
-
-
-
-
             </div>
+          
         </section>
     </main>
 </body>
