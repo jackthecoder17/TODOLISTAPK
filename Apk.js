@@ -1,7 +1,15 @@
 window.addEventListener('load', () => {
     const form = document.querySelector('#new-task-form');
     const input = document.querySelector('#new-task-input');
+    const button = document.querySelector('#new-task-delete')
     const list_el = document.querySelector('#tasks');
+    const Dan_el = document.querySelector('#container');
+
+    Dan_el.appendChild(list_el);
+
+
+
+
 
     form.addEventListener('submit', (e) => {
         e.preventDefault();
@@ -82,15 +90,6 @@ window.addEventListener('load', () => {
             task_delete_el.style.visibility = "hidden";
             task_edit_el.style.visibility = "hidden"
         })
-        button.addEventListener('click', () => {
-            Dan_el.removeChild(list_el)
-
-        })
-
-
-
-
-
 
 
     })
